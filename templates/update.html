@@ -7,14 +7,6 @@
     <input type="text" name="content" id="content" value="{{ task.content }}" />
     <input type="submit" id="submit" value="update" />
   </form>
-  <script>
-    const input = document.getElementById("content");
-    document.getElementById("submit").addEventListener("click", (e) => {
-      if (input.value == "") {
-        e.preventDefault();
-        alert("input masih kosong");
-      }
-    });
-  </script>
+  <script src="../js/validate.js"></script>
 </div>
 {% endblock %}

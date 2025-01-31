@@ -25,14 +25,6 @@
     <input type="text" name="content" id="content" />
     <input type="submit" id="submit" value="Add task" />
   </form>
-  <script>
-    const input = document.getElementById("content");
-    document.getElementById("submit").addEventListener("click", (e) => {
-      if (input.value == "") {
-        e.preventDefault();
-        alert("input masih kosong");
-      }
-    });
-  </script>
+  <script src="../js/validate.js"></script>
 </div>
 {% endblock %}
