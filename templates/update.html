@@ -1,0 +1,20 @@
+{% extends 'base.html' %} {% block head %}
+<title>update</title>
+{% endblock %} {% block body %}
+<div class="content">
+  <h1>Task master</h1>
+  <form action="/update/{{ task.id }}" method="post" class="update-task">
+    <input type="text" name="content" id="content" value="{{ task.content }}" />
+    <input type="submit" id="submit" value="update" />
+  </form>
+  <script>
+    const input = document.getElementById("content");
+    document.getElementById("submit").addEventListener("click", (e) => {
+      if (input.value == "") {
+        e.preventDefault();
+        alert("input masih kosong");
+      }
+    });
+  </script>
+</div>
+{% endblock %}

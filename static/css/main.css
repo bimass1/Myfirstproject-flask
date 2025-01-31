@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+table,
+.add-task,
+.update-task {
+  margin: auto; /* Menengahkan tabel secara horizontal */
+  border-collapse: collapse;
+  width: 50%; /* Atur lebar tabel */
+}
+th,
+td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+h1 {
+  text-align: center;
+}
